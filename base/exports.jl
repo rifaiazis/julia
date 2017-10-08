@@ -654,6 +654,7 @@ export
     deleteat!,
     eltype,
     empty!,
+    empty,
     endof,
     filter!,
     filter,
