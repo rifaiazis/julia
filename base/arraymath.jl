@@ -33,11 +33,16 @@ end
 
 ## Binary arithmetic operators ##
 
-for f in (:+, :-)
-    @eval function ($f)(A::AbstractArray, B::AbstractArray)
+function +(A::AbstractArray, Bs::AbstractArray...)
+    for B in Bs
         promote_shape(A, B) # check size compatibility
-        broadcast($f, A, B)
     end
+    broadcast(+, A, Bs...)
+end
+
+function -(A::AbstractArray, B::AbstractArray)
+    promote_shape(A, B) # check size compatibility
+    broadcast(-, A, B)
 end
 
 for f in (:/, :\, :*)
