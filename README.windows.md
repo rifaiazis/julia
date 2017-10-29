@@ -70,9 +70,9 @@ The 64-bit (x86_64) binary will only run on 64-bit Windows and will otherwise re
 
 ### Supported build platforms
 
- -  Windows 10: supported (32 and 64 bits)
- -  Windows 8: supported (32 and 64 bits)
- -  Windows 7: supported (32 and 64 bits)
+ >  Windows 10: supported (32 and 64 bits)
+ >  Windows 8: supported (32 and 64 bits)
+ >  Windows 7: supported (32 and 64 bits)
 
 ### Cygwin-to-MinGW cross-compiling
 
